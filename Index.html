@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-визитка: QA Engineer - Алексей Обыденов</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+</head>
+<body>
+<!-- Весь контент внутри matrix-параллакса -->
+<div class="matrix-parallax">
+    <canvas id="matrix-canvas"></canvas>
+    <div class="matrix-overlay"></div>
+
+    <div class="content-wrapper">
+        <!-- Ваш header -->
+        <header class="main-header">
+            <div class="header-content">
+                <h1>Алексей Обыденов</h1>
+                <p>QA Manual Engineer</p>
+                <img src="IMG_7547.jpg" alt="Фото профиля" class="profile-img">
+            </div>
+        </header>
+        <!-- Основной контент -->
+        <main class="container">
+        <section>
+            <h2>Обо мне</h2>
+            <p>Мне 37 лет, проживаю в городе Ростов-на-Дону. Я тестировщик с 2-х летним стажем в области функционального / нефункционального тестирования. Свободное время посвящаю саморазвитию в области IT </p>
+        </section>
+
+            <div class="contact-info">
+                <h2>Контактная информация</h2>
+                <div class="contact-grid">
+                    <p>
+                        <i class="icon fas fa-envelope"></i>
+                        Email: <a href="mailto:wanteruga01@yandex.ru">wanteruga01@yandex.ru</a>
+                    </p>
+                    <p>
+                        <i class="icon fas fa-mobile-alt"></i>
+                        Телефон: <a href="tel:+79189479672">+7 (918) 947-96-72</a>
+                    </p>
+                    <p>
+                        <i class="icon fab fa-telegram-plane"></i>
+                        Telegram: <a href="https://t.me/alexobydenoff" target="_blank">@alexobydenoff</a>
+                    </p>
+                    <p>
+                        <i class="icon fab fa-github"></i>
+                        GitHub: <a href="https://github.com/Alexwanter-cloud" target="_blank">Alexwanter-cloud</a>
+                    </p>
+                    <p>
+                        <i class="icon fas fa-map-marker-alt"></i>
+                        Местоположение: Ростов-на-Дону, Россия
+                    </p>
+                </div>
+            </div>
+
+            <section class="skills-section">
+                <h2>Навыки и стек</h2>
+                <div class="skills-container">
+                    <!-- Группировка навыков по категориям -->
+                    <div class="skill-category">
+                        <h3>Основные</h3>
+                        <div class="skills-grid">
+                            <button class="skill-btn" data-description="Функциональное, регрессионное, интеграционное тестирование">
+                                Ручное тестирование
+                            </button>
+                            <button class="skill-btn" data-description="Тестирование REST API и SOAP API с использованием Postman, SOAP UI">
+                                Работа с API
+                            </button>
+                            <button class="skill-btn" data-description="Применение техник и методов тест-дизайна для эффективного выявления дефектов в ПО">
+                                Тест-дизайн
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Инструменты</h3>
+                        <div class="skills-grid">
+                            <button class="skill-btn" data-description="Тестирование API, создание коллекций">
+                                Postman
+                            </button>
+                            <button class="skill-btn" data-description="Доступ к базе данных">
+                                Metabase, DBeaver, MongoDB
+                            </button>
+                            <button class="skill-btn" data-description="Написание запросов, проверка данных">
+                                PostgreSQL
+                            </button>
+                            <button class="skill-btn" data-description="Управление задачами и багами">
+                                Яндекс Трекер
+                            </button>
+                            <button class="skill-btn" data-description="Написание тест кейсов (TMS)">
+                                Test IT
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Дополнительные</h3>
+                        <div class="skills-grid">
+                            <button class="skill-btn" data-description="Управление тестовой документацией">
+                                TestRail
+                            </button>
+                            <button class="skill-btn" data-description="Анализ сетевого трафика">
+                                Charles Proxy
+                            </button>
+                            <button class="skill-btn" data-description="Версионный контроль кода">
+                                Git
+                            </button>
+                            <button class="skill-btn" data-description="CI/CD процессы">
+                                Jenkins
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Модальное окно для описания -->
+                <div id="skillModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-btn">&times;</span>
+                        <h3 id="modalTitle"></h3>
+                        <p id="modalDescription"></p>
+                    </div>
+                </div>
+            </section>
+
+        <section>
+            <h2>Опыт работы</h2>
+
+            <div class="experience-item">
+                <div class="job-title">Тестировщик ПО</div>
+                <div class="company">ООО "Датум Soft"</div>
+                <div class="date">09.2021 - 11.2024</div>
+                <ul>
+                    <li>Проведение функционального, регрессионного и интеграционного тестирования</li>
+                    <li>Создание и поддержка тестовой документации (чек-листы, тест-кейсы, баг-репорты)</li>
+                    <li>Тестирование API с использованием Postman</li>
+                    <li>Участие в планировании спринтов и оценке задач</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Образование</h2>
+
+            <div class="education-item">
+                <div class="degree">[Название степени], [Специальность]</div>
+                <div class="university">[Название университета]</div>
+                <div class="date">[Год] - [Год]</div>
+            </div>
+
+            <div class="education-item">
+                <div class="degree">Курсы по тестированию ПО</div>
+                <div class="university">[Название курсов/школы]</div>
+                <div class="date">[Год]</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Сертификаты</h2>
+            <ul>
+                <li>[Название сертификата] - [Организация], [Год]</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Проекты</h2>
+            <p><strong>[Название проекта]</strong> - [Краткое описание проекта и моя роль в нём].</p>
+        </section>
+</main>
+
+        <footer>
+            <div class="container">
+                &copy; 2025 Алексей Обыденов. Все права защищены.
+            </div>
+        </footer>
+    </div>
+</div>
+
+    <script src="matrix-effect.js"></script>
+    <script src="parallax.js" defer></script>
+    <script src="modal.js" defer></script>
+</body>
+</html>
